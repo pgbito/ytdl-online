@@ -4,4 +4,9 @@ A web wrapper for pytube
  ```sh
     git clone https://github.com/pgbito/ytdl-online/ ytdl
     cd ytdl
-    pip
+    pip install -r requirements.txt
+    
+    ```
+    
+# Usage
+
