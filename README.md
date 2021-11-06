@@ -6,7 +6,12 @@ A web wrapper for pytube
     cd ytdl
     pip install -r requirements.txt
     
-    ```
+ ```
     
 # Usage
+ ```sh
+  python main.py
+ ```
+ 
+ If you need help open a issue.
 
