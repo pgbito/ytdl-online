@@ -1,0 +1,6 @@
+httpcore==0.13.7
+httpx==0.20.0
+pytube==11.0.1
+urllib3==1.26.6
+youtube-dl==2021.6.6
+
