@@ -13,7 +13,7 @@ def encode(body: str):
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
-     if self.path == '/download':
+     if self.path.startswith('/download'):
               
         self.send_response(200)
         self.send_header("Content-type", "text/html")
