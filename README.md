@@ -13,5 +13,5 @@ A web wrapper for pytube
   python main.py
  ```
  
- If you need help open a issue.
+ If you need help open an issue.
 
