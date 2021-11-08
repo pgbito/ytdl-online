@@ -3,10 +3,18 @@ import urllib,time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 CHROME_EXECUTABLE_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+
+
+mp3 = False
+
+
+
+
+
+
+#No tocar \ Do not edit
 hostName = "localhost"
 serverPort = 80
-
-
 def encode(body: str):
     return bytes(f'{body}', "utf-8")
 
@@ -22,7 +30,9 @@ class MyServer(BaseHTTPRequestHandler):
 
         from pytube import YouTube
         url=self.path.replace('/download?url=','')
-        strr = YouTube(url).streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first().url
+        r = 'mp3' if mp3 = True else r ='mp4'
+
+        strr = YouTube(url).streams.filter(progressive=True, file_extension=r).order_by('resolution').desc().first().url
 
 
         self.wfile.write(encode('<body style="background-color: black;color: white;text-align: center;"><h1>Redirecting to download...</h1></body><script>setTimeout(function(){window.location.assign("'+strr+'")},5000)</script>'))
