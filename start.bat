@@ -1,1 +1,2 @@
-py main.pyw 
+pythonw main.py
+exit
