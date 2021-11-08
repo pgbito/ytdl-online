@@ -30,8 +30,10 @@ class MyServer(BaseHTTPRequestHandler):
 
         from pytube import YouTube
         url=self.path.replace('/download?url=','')
-        r = 'mp3' if mp3 = True else r ='mp4'
-
+        
+        if mp3 == True
+         r = 'mp3'
+        else r ='mp4'
         strr = YouTube(url).streams.filter(progressive=True, file_extension=r).order_by('resolution').desc().first().url
 
 
